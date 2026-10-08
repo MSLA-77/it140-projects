@@ -1,20 +1,31 @@
 """Project Two starter for the student's text-based adventure game."""
 
-# TODO: Add the full-name comment required by Project Two directions.
+# Student Name: Lakesha Bennett
 
 
 def show_instructions():
     """Display the game objective and available commands."""
-    # TODO: Print instructions that match your game and commands.
-    pass
+    
+    print("Welcome to the Text-Based Adventure Game!")
+    print("Collect all items before encountering the villain.")
+    print("Move commands: go north, go south, go east, go west")
+    print("Collect items: get item name")
+
+    
 
 
 def show_status(current_room, inventory, rooms):
     """Display the player's current game status."""
-    # TODO: Show the current room.
-    # TODO: Show the current inventory.
-    # TODO: Show the current-room item when one is available.
-    pass
+    
+    print("----------------------")
+    print(f"You are in the {current_room}")
+    print(f"Inventory: {inventory}")
+
+    if "item" in rooms[current_room]:
+        print(f"You see a {rooms[current_room]['item']}")
+
+    print("----------------------")
+
 
 
 def main():
